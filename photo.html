@@ -6,9 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Добро пожалоавать в Седону</h1>
       <nav class="main-nav">
-        <button class="main-nav__toggler main-nav__toggler--closed" type="button" title="Меню"></button>
+        <button class="main-nav__toggler main-nav__toggler--closed" type="button">Меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Главная</a>
@@ -23,110 +22,109 @@
             <a class="main-nav__link" href="#">Html Academy</a>
           </li>
         </ul>
-        <button class="main-nav__toggler main-nav__toggler--opened" type="button" title="Меню"></button>
-        <a class="page-header__logo-link header-logo" href="index.html">
-          <picture class="header-logo__container">
-            <source class="header-logo__desktop" media="(min-width:#px)" srcset="img/logo-desktop.svg">
-            <source class="header-logo__tablet" media="(min-width:#px)" srcset="img/logo-tablet.svg">
-            <img class="header-logo__mobile" src="img/logo-mobile.svg" alt="Логотип Седона" width="#" height="#"></img>
-          </picture>
-        </a>
       </nav>
+      <a class="page-header__logo-link header-logo" href="index.html">
+        <picture class="header-logo__container">
+          <source media="(min-width:#px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width:#px)" srcset="img/logo-tablet.svg">
+          <img class="header-logo__img" src="img/logo-mobile.svg" alt="Логотип Седона" width="#" height="#"></img>
+        </picture>
+      </a>
       <picture class="header-picture header-picture--inner">
-        <source class="header-picture__desktop" media="(min-width:#px)" srcset="img/logo-desktop.svg">
-        <source class="header-picture__tablet" media="(min-width:#px)" srcset="img/logo-tablet.svg">
-        <img class="header-picture__mobile" src="img/logo-mobile.svg" alt="Welcome Sedona" width="#" height="#"></img>
+        <source media="(min-width:#px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width:#px)" srcset="img/logo-tablet.svg">
+        <img class="header-picture__img" src="img/logo-mobile.svg" alt="Welcome Sedona" width="#" height="#"></img>
       </picture>
     </header>
     <main class="page-content">
-      <section class="page-content__block media">
-        <header class="page-content__header media__header">
-          <h1 class="page-content__title media__title">Фото и видео</h1>
-          <p class="page-content__text media__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="page-content__block photos">
+        <header class="page-content__header photos__header">
+          <h1 class="page-content__title photos__title">Фото и видео</h1>
+          <p class="page-content__text photos__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
         <article class="photo photo--full">
           <a class="photo__link" href="#">
             <picture class="photo__picture">
-              <source class="photo__desktop" media="(min-width:#px)" srcset="img/pic.jpg">
-              <source class="photo__tablet" media="(min-width:#px)" srcset="img/pic.jpg">
-              <img class="photo__mobile" src="img/pic.jpg" alt="Неродные просторы">
+              <source media="(min-width:#px)" srcset="img/pic.jpg">
+              <source media="(min-width:#px)" srcset="img/pic.jpg">
+              <img class="photo__img" src="img/pic.jpg" alt="Неродные просторы">
             </picture>
           </a>
           <div class="photo__wrapper">
-            <div class="photo_inner">
+            <div class="photo__inner">
               <h2 class="photo__title">Неродные просторы</h2>
               <p class="photo__author">Автор фото: Борис</p>
             </div>
-            <a class="photo_like" href="#">1350</a>
+            <a class="photo__like" href="#">1350</a>
           </div>
         </article>
         <article class="photo">
           <a class="photo__link" href="#">
             <picture class="photo__picture">
-              <source class="photo__desktop" media="(min-width:#px)" srcset="img/pic.jpg">
-              <source class="photo__tablet" media="(min-width:#px)" srcset="img/pic.jpg">
-              <img class="photo__mobile" src="img/pic.jpg" alt="Местная растительность">
+              <source media="(min-width:#px)" srcset="img/pic.jpg">
+              <source media="(min-width:#px)" srcset="img/pic.jpg">
+              <img class="photo__img" src="img/pic.jpg" alt="Неродные просторы">
             </picture>
           </a>
           <div class="photo__wrapper">
-            <div class="photo_inner">
+            <div class="photo__inner">
               <h2 class="photo__title">Местная растительность</h2>
               <p class="photo__author">Автор фото: Сергей</p>
             </div>
-            <a class="photo_like" href="#">143</a>
+            <a class="photo__like" href="#">143</a>
           </div>
         </article>
         <article class="photo">
           <a class="photo__link" href="#">
             <picture class="photo__picture">
-              <source class="photo__desktop" media="(min-width:#px)" srcset="img/pic.jpg">
-              <source class="photo__tablet" media="(min-width:#px)" srcset="img/pic.jpg">
-              <img class="photo__mobile" src="img/pic.jpg" alt="Дорога на север">
+              <source media="(min-width:#px)" srcset="img/pic.jpg">
+              <source media="(min-width:#px)" srcset="img/pic.jpg">
+              <img class="photo__img" src="img/pic.jpg" alt="Неродные просторы">
             </picture>
           </a>
           <div class="photo__wrapper">
-            <div class="photo_inner">
+            <div class="photo__inner">
               <h2 class="photo__title">Дорога на север</h2>
               <p class="photo__author">Автор фото: Петр</p>
             </div>
-            <a class="photo_like" href="#">96</a>
+            <a class="photo__like" href="#">96</a>
           </div>
         </article>
         <article class="photo">
           <a class="photo__link" href="#">
             <picture class="photo__picture">
-              <source class="photo__desktop" media="(min-width:#px)" srcset="img/pic.jpg">
-              <source class="photo__tablet" media="(min-width:#px)" srcset="img/pic.jpg">
-              <img class="photo__mobile" src="img/pic.jpg" alt="Местная растительность">
+              <source media="(min-width:#px)" srcset="img/pic.jpg">
+              <source media="(min-width:#px)" srcset="img/pic.jpg">
+              <img class="photo__img" src="img/pic.jpg" alt="Неродные просторы">
             </picture>
           </a>
           <div class="photo__wrapper">
-            <div class="photo_inner">
+            <div class="photo__inner">
               <h2 class="photo__title">Мост дьявола</h2>
               <p class="photo__author">Автор фото: Антон</p>
             </div>
-            <a class="photo_like" href="#">254</a>
+            <a class="photo__like" href="#">254</a>
           </div>
         </article>
       </section>
-      <section class="page-content__block media">
-        <header class="page-content__header media__header">
-          <h1 class="page-content__title media__title">Все еще сомневаетесь?</h1>
-          <p class="page-content__text media__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <section class="page-content__block video">
+        <header class="page-content__header video__header">
+          <h1 class="page-content__title video__title">Все еще сомневаетесь?</h1>
+          <p class="page-content__text video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </header>
         <div class="media__video"></div>
       </section>
     </main>
     <footer class="page-footer">
-      <span class="page-footer__hashtag">#visitSEDONA</span>
+      <div class="page-footer__hashtag">#visitSEDONA</div>
       <div class="social-links">
         <a class="social-link social-link--twitter" href="#">Мы в Твиттере</a>
         <a class="social-link social-link--facebook" href="#">Мы в Фейсбук</a>
         <a class="social-link social-link--youtube" href="#">Мы в Ютюб</a>
       </div>
-      <div class="page-footer__copyright">
-        <span class="page-footer__copyright-text">Разработано</span>
-        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      <div class="page-footer__block copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </footer>
   </body>
