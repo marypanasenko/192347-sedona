@@ -1,0 +1,31 @@
+.page-header {
+  .container();
+}
+
+.page-header__logo-wrapper {
+  min-height: 56px;
+  position: relative;
+}
+
+.page-header__picture-wrapper {
+  position: relative;
+  width: 320px;
+  height: 388px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: round;
+    z-index: 2;
+    width: 320px;
+    height: 57px;
+    bottom: -30px;
+  }
+
+  &--inner {
+    height: 159px;
+    background-position: bottom;
+  }
+}

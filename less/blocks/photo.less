@@ -1,0 +1,42 @@
+.photo {
+  padding: 20px 20px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo__link {
+  display: block;
+}
+
+.photo__title {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__like {
+  position: relative;
+  padding: 0 0 0 37px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 21px;
+      background-image: url("../img/icon-like.svg");
+      background-repeat: no-repeat;
+      top: -25%;
+      left: 0;
+    }
+}

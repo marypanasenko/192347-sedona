@@ -1,0 +1,111 @@
+.feature {
+  position: relative;
+  padding: 25px 0 0 0;
+
+  &--triangle {
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 37px;
+      background-image: url("../img/bg-triangle.svg");
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  &--short {
+    margin: 0 20px;
+    border-bottom: 1px solid #d6d6d6;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__picture {
+    margin: 0;
+  }
+}
+.feature__block {
+  padding: 0 20px;
+  background-color: @blue-base;
+
+
+  &--town {
+    padding-top: 15px;
+  }
+}
+.feature__title {
+  text-align: center;
+  margin: 0;
+  padding: 40px 0 0 0;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  &--full {
+    color: #ffffff;
+  }
+}
+
+.feature__number {
+  margin: 0 115px;
+  padding: 0 6px;
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+
+  &--full {
+    color: #ffffff;
+    background-color: @blue-base;
+    z-index: 9;
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      width: 50px;
+      height: 2px;
+      background-color: #ffffff;
+      top: 50%;
+      left: -21%;
+    }
+  }
+
+  &--short {
+    color: @gray;
+    background-color: @gray-light;
+    z-index: 9;
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      width: 50px;
+      height: 2px;
+      background-color: @gray;
+      top: 50%;
+      left: -21%;
+    }
+  }
+}
+
+.feature__text {
+  text-align: center;
+  padding: 15px 0 40px 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+
+  &--full {
+    color: #ffffff;
+  }
+  &--short {
+    color: @gray;
+    padding: 15px 15px 40px 15px;
+  }
+}

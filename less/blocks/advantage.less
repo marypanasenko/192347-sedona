@@ -1,0 +1,51 @@
+.advantages {
+  padding: 0 20px;
+}
+.advantage {
+  position: relative;
+  padding: 0 0 0 50px;
+
+  &--house::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-house.svg");
+    width: 39px;
+    height: 37px;
+    background-size: 39px;
+    top: 0;
+    left: 0;
+  }
+  &--memento::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-gift.svg");
+    width: 32px;
+    height: 38px;
+    background-size: 32px;
+    top: 0;
+    left: 0;
+  }
+  &--food::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-burger.svg");
+    width: 40px;
+    height: 35px;
+    background-size: 40px;
+    top: 0;
+    left: 0;
+  }
+
+}
+.advantage__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.advantage__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}

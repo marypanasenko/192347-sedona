@@ -1,0 +1,23 @@
+.social-link {
+  display: flex;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  font-size: 0;
+  background-color: @blue-base;
+
+  &:hover {
+    background-color: @blue-darker;
+  }
+  &:active {
+    background-color: @blue-darkest;
+  }
+}
+
+.social-link__svg {
+  align-self: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
