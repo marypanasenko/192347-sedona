@@ -2,10 +2,11 @@
   display: block;
   text-align: center;
   width: 280px;
-  padding: 10px 0 10px 0;
-  margin: 20px 20px;
-  font-size: 21px;
-  line-height: 26px;
+  min-height: 58px;
+  margin: 35px 20px;
+  padding: 15px 0;
+  font-size: @button-fs;
+  line-height: @button-lh;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -13,15 +14,18 @@
   background-color: @blue-base;
   box-sizing: border-box;
   border: none;
+  white-space: normal;
 
   &:hover {
     background-color: @blue-darker;
     color: #ffffff;
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: @blue-darkest;
   }
+
   &:disabled {
     background-color: #e5e5e5;
     color: #ffffff;

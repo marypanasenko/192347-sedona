@@ -1,9 +1,6 @@
-.advantages {
-  padding: 0 20px;
-}
 .advantage {
   position: relative;
-  padding: 0 0 0 50px;
+  padding-left: 50px;
 
   &--house::before {
     content: "";
@@ -12,9 +9,10 @@
     width: 39px;
     height: 37px;
     background-size: 39px;
-    top: 0;
-    left: 0;
+    top: -10px;
+    left: 1px;
   }
+
   &--memento::before {
     content: "";
     position: absolute;
@@ -22,9 +20,10 @@
     width: 32px;
     height: 38px;
     background-size: 32px;
-    top: 0;
-    left: 0;
+    top: -11px;
+    left: 5px;
   }
+
   &--food::before {
     content: "";
     position: absolute;
@@ -32,19 +31,22 @@
     width: 40px;
     height: 35px;
     background-size: 40px;
-    top: 0;
-    left: 0;
+    top: -6px;
+    left: -2px;
   }
-
 }
+
 .advantage__title {
-  font-size: 18px;
-  line-height: 26px;
+  margin: 0;
+  margin-top: 25px;
+  font-size: @title-fs-mobile;
+  line-height: @title-lh;
   text-transform: uppercase;
 }
 
 .advantage__text {
-  font-size: 14px;
+  margin: 14px 0 28px;
+  font-size: @text-fs-mobile;
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
