@@ -13,7 +13,6 @@
 .main-nav__item {
   display: flex;
   padding: 7px 0;
-
   list-style: none;
   background-color: @blue-base;
   border-top: 1px solid #9ac2db;
@@ -42,7 +41,6 @@
 .main-nav__toggler {
   position: absolute;
   z-index: 2;
-
   display: block;
   width: 40px;
   height: 40px;
@@ -50,13 +48,55 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: @blue-base;
-
   cursor: pointer;
   border: none;
+  background-image: url("../img/icon-cross.svg");
 
   &--closed {
     top: 0;
     right: 0;
-    background-image: url("../img/icon-cross.svg");
+  }
+}
+
+@media @tablet-widths {
+  .main-nav__toggler {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+    min-height: 56px;
+  }
+
+  .main-nav__item {
+    background-color: #ffffff;
+    border: none;
+    align-items: center;
+    padding: 0;
+
+    &:nth-of-type(4n+2) {
+      margin-right: 156px;
+    }
+
+    &:first-of-type {
+      padding: 0;
+    }
+    &:last-of-type {
+      box-shadow: none;
+    }
+  }
+
+  .main-nav__link {
+    width: 153px;
+    text-align: center;
+    padding: 0px 5px 0 8px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    box-sizing: border-box;
   }
 }
