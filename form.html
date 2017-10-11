@@ -28,8 +28,8 @@
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo-link header-logo">
           <picture class="header-logo__container">
-            <source media="(min-width:768px)" srcset="img/#.svg">
-            <source media="(min-width:1200px)" srcset="img/#.svg">
+            <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
             <img class="header-logo__img" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83"></img>
           </picture>
         </a>
@@ -45,25 +45,25 @@
           <p class="page-content__text review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="review__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Представьтесь:</legend>
-            <div class="form__input-wrapper">
-              <div class="form__input-block">
+          <fieldset class="form__fieldset form__fieldset--name">
+            <legend class="form__legend form__legend--name">Представьтесь:</legend>
+            <div class="form__input-wrapper form__input-wrapper--name">
+              <div class="form__input-block form__input-block--name">
                 <label class="form__label" for="name">Имя*:</label>
                 <input class="form__entry-field" type="text" name="name" id="name" placeholder="Петр" required>
               </div>
-              <div class="form__input-block">
+              <div class="form__input-block form__input-block--name">
                 <label class="form__label" for="surname">Фамилия*:</label>
                 <input class="form__entry-field" type="text" name="surname" id="surname" placeholder="Иванов" required>
               </div>
-              <div class="form__input-block">
+              <div class="form__input-block form__input-block--name">
                 <label class="form__label" for="patronym">Отчетсво:</label>
                 <input class="form__entry-field" type="text" name="patronym" id="patronym" placeholder="Александрович">
               </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--contact">
-            <legend class="form__legend">Контактная информация:</legend>
+            <legend class="form__legend form__legend--contact">Контактная информация:</legend>
             <div class="form__input-wrapper">
               <div class="form__input-block form__input-block--contact">
                 <label class="form__label form__label--contact form__label--phone" for="tel">Контактный телефон*:</label>
@@ -77,7 +77,7 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--radio">
             <legend class="form__legend">Ваше общее впечатление:</legend>
-            <div class="form__input-wrapper">
+            <div class="form__input-wrapper form__input-wrapper--radio">
               <div class="form__input-block radio">
                 <input class="form__input radio__input" type="radio" value="positive" name="expression" id="positive" checked>
                 <label class="form__label radio__label" for="positive">Скорее положительное</label>
@@ -93,7 +93,7 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--checkbox">
-            <legend class="form__legend">Посещенные достопримечательности</legend>
+            <legend class="form__legend form__legend--checkbox">Посещенные достопримечательности</legend>
             <div class="form__input-wrapper form__input-wrapper--checkbox">
               <div class="form__input-block checkbox">
                 <input class="form__input checkbox__input" type="checkbox" name="sight" value="devils bridge" id="devil">
@@ -113,11 +113,11 @@
               </div>
             </div>
           </fieldset>
-          <div class="form__wrapper">
-            <label class="form__legend" for="message">Опишите свои эмоции:</label>
+          <div class="form__wrapper form__wrapper--textarea">
+            <label class="form__legend form__legend--textarea" for="message">Опишите свои эмоции:</label>
             <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги" name="message"></textarea>
           </div>
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--button">
             <input class="form__button button" type="submit" value="Отправить отзыв">
             <p class="form__notice">* - Обязательные поля</p>
           </div>
@@ -157,14 +157,16 @@
       </div>
     </footer>
     <div class="modal modal--failure">
-      <h2 class="modal__title">Что-то пошло не так!</h2>
-      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <h2 class="modal__title modal__title--failure">Что-то пошло не так!</h2>
+      <p class="modal__text modal__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="modal__button modal__button--ok button" type="button" name="button">ОК</button>
     </div>
     <div class="modal modal--success">
       <h2 class="modal__title">Ваш отзыв отправлен!</h2>
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="modal__button button" type="button" name="button">Закрыть окно</button>
+      <div class="modal__wrapper">
+        <button class="modal__button modal__button--success button" type="button" name="button">Закрыть окно</button>
+      </div>
     </div>
   </body>
 </html>

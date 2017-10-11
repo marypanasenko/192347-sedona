@@ -1,6 +1,13 @@
 .checkbox {
   margin: 0;
   margin-bottom: 43px;
+
+  @media @tablet-widths {
+    width: 260px;
+    padding: 0;
+    margin-bottom: 50px;
+
+  }
 }
 
 .checkbox__input + .checkbox__label::before {
@@ -14,6 +21,10 @@
   height: 55px;
   background-color: @gray-light;
   border-radius: 10%;
+
+  @media @tablet-widths {
+    left: 31px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label::after {
@@ -27,6 +38,10 @@
   height: 16px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
+
+  @media @tablet-widths {
+    left: 48px;
+  }
 }
 
 .checkbox__label {
@@ -37,4 +52,8 @@
   line-height: @label-lh;
   text-transform: none;
   font-weight: 700;
+
+  @media @tablet-widths {
+    padding-left: 109px;
+  }
 }

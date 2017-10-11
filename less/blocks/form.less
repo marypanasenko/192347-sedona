@@ -1,5 +1,14 @@
 .form {
   .container();
+
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 54px 60px 0;
+    box-sizing: border-box;
+    overflow: auto;
+  }
 }
 
 .form__fieldset {
@@ -7,17 +16,48 @@
   margin: 0 0 6px;
   padding: 0;
 
+  &--name {
+    @media @tablet-widths {
+      order: 2;
+      width: 324px;
+    }
+  }
+
   &--contact {
     margin: 0 0 16px;
+
+    @media @tablet-widths {
+      order: 3;
+      width: 648px;
+      margin-top: 35px;
+      padding-top: 11px;
+      box-sizing: border-box;
+      border-top: 1px solid @gray-light;
+    }
   }
 
   &--radio {
     margin: 0;
     margin-bottom: 19px;
+
+    @media @tablet-widths {
+      order: 1;
+      width: 324px;
+      border-right: 1px solid @gray-light;
+      box-sizing: border-box;
+    }
   }
 
   &--checkbox {
     margin: 0;
+
+    @media @tablet-widths {
+      order: 4;
+      width: 648px;
+      margin-top: 13px;
+      padding-top: 46px;
+      border-top: 1px solid @gray-light;
+    }
   }
 }
 
@@ -32,6 +72,36 @@
   text-transform: uppercase;
   font-weight: 700;
   border-top: 1px solid #e5e5e5;
+
+  @media @tablet-widths {
+    padding: 0;
+    text-align: center;
+    font-size: @title-fs-desktop;
+    border: none;
+  }
+
+  &--name {
+    @media @tablet-widths {
+      padding-left: 57px;
+    }
+  }
+
+  &--contact {
+    @media @tablet-widths {
+      width: 395px;
+    }
+  }
+  &--checkbox {
+    @media @tablet-widths {
+      width: 395px;
+    }
+  }
+
+  &--textarea {
+    @media @tablet-widths {
+      width: auto;
+    }
+  }
 }
 
 .form__input-block {
@@ -44,12 +114,29 @@
   margin: 0 0 20px;
   position: relative;
 
+  @media @tablet-widths {
+    flex-direction: row;
+    width: auto;
+  }
+
+  &--name {
+    @media @tablet-widths {
+      width: auto;
+      padding: 0 0 0 58px;
+      box-sizing: border-box;
+    }
+  }
+
   &--contact {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 24px 0 10px;
+
+    @media @tablet-widths {
+      padding: 0;
+      margin: 13px 0 21px;
+    }
   }
 }
 
@@ -81,6 +168,10 @@
       z-index: 1999;
       right: -73px;
       bottom: -67px;
+
+      @media @tablet-widths {
+        right: -441px;
+      }
     }
   }
 
@@ -99,6 +190,10 @@
       z-index: 1999;
       right: -88px;
       bottom: -67px;
+
+      @media @tablet-widths {
+        right: -456px;
+      }
     }
   }
 }
@@ -117,9 +212,36 @@
 
   &--contact {
     width: 222px;
+
+    @media @tablet-widths {
+      width: 590px;
+    }
   }
 }
+.form__input-wrapper {
+  &--radio {
+    @media @tablet-widths {
+      padding-top: 55px;
+    }
+  }
 
+  &--name {
+    @media @tablet-widths {
+      padding-top: 57px;
+    }
+  }
+
+  &--checkbox {
+    @media @tablet-widths {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 520px;
+      margin: 0 auto;
+
+    }
+  }
+}
 .form__input {
   display: none;
 }
@@ -137,8 +259,74 @@
   background-color: @gray-light;
   border: none;
   resize: vertical;
+
+  @media @tablet-widths {
+    width: 648px;
+    min-height: 160px;
+    margin: 0;
+    margin-top: 56px;
+  }
 }
 
 .form__notice {
   display: none;
+}
+
+.form__wrapper {
+  &--textarea {
+    @media @tablet-widths {
+      order: 5;
+      width: 648px;
+      margin-top: 36px;
+      position: relative;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 125px;
+      height: 1px;
+      top: 13px;
+      left: 0;
+      background-color: @gray-light;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 125px;
+      height: 1px;
+      top: 13px;
+      right: 0;
+      background-color: @gray-light;
+    }
+  }
+  &--button {
+    @media @tablet-widths {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      order: 6;
+      width: 648px;
+      margin-top: 50px;
+      margin-bottom: 61px;
+    }
+  }
+}
+
+.form__button {
+  @media @tablet-widths {
+    width: 324px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+
+.form__notice {
+  @media @tablet-widths {
+    display: block;
+    text-align: right;
+    width: 196px;
+    text-transform: uppercase;
+  }
 }

@@ -3,7 +3,18 @@
   margin: 0 auto;
   padding-top: 90px;
 
+  @media @tablet-widths {
+    padding-top: 77px;
+    width: 460px;
+    height: 350px;
+  }
+
   &--inner {
     padding-top: 50px;
+
+    @media @tablet-widths {
+      padding-top: 0;
+      height: 269px;
+    }
   }
 }

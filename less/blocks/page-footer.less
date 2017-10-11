@@ -1,5 +1,13 @@
 .page-footer {
   .container();
+
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 36px auto;
+  }
 }
 
 .page-footer__hashtag {
@@ -9,4 +17,8 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media @tablet-widths {
+    padding: 0;
+  }
 }

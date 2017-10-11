@@ -1,6 +1,22 @@
 .modal {
   .container();
   display: block;
+
+  &--failure {
+    @media @tablet-widths {
+      width: 400px;
+      padding: 50px 0;
+      box-shadow: 0px 9px 28px -12px rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  &--success {
+    @media @tablet-widths {
+      width: 641px;
+      padding-top: 53px;
+      box-shadow: 0px 9px 28px -12px rgba(0, 0, 0, 0.75);
+    }
+  }
 }
 
 .modal__title {
@@ -12,6 +28,18 @@
   line-height: @title-lh;
   text-transform: uppercase;
   font-weight: 700;
+
+  @media @tablet-widths {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  &--failure {
+    @media @tablet-widths {
+      padding: 0 80px;
+    }
+  }
 }
 
 .modal__text {
@@ -22,6 +50,17 @@
   font-size: @text-fs-mobile;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media @tablet-widths {
+    padding: 0 110px;
+    margin-bottom: 30px;
+
+    &--failure {
+      @media @tablet-widths {
+        padding: 0 50px;
+      }
+    }
+  }
 }
 
 .modal__button {
@@ -30,5 +69,25 @@
 
   &--ok {
     width: 180px;
+
+    @media @tablet-widths {
+      width: 272px;
+    }
+  }
+
+  &--success {
+    @media @tablet-widths {
+      width: 458px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.modal__wrapper {
+  @media @tablet-widths {
+    height: 146px;
+    padding: 44px 0 44px;
+    box-sizing: border-box;
+    background-color: @gray-light;
   }
 }

@@ -1,6 +1,10 @@
 .radio {
   margin: 0;
   margin-bottom: 25px;
+
+  @media @tablet-widths {
+    margin-bottom: 34px;
+  }
 }
 
 .radio__input + .radio__label::before {
@@ -14,6 +18,10 @@
   height: 55px;
   background-color: @gray-light;
   border-radius: 50%;
+
+  @media @tablet-widths {
+    left: 2px;
+  }
 }
 
 .radio__input:checked + .radio__label::after {
@@ -27,6 +35,10 @@
   height: 22px;
   background-color: #000000;
   border-radius: 50%;
+
+  @media @tablet-widths {
+    left: 17px;
+  }
 }
 
 .radio__label {
@@ -37,4 +49,8 @@
   line-height: @label-lh;
   text-transform: none;
   font-weight: 700;
+
+  @media @tablet-widths {
+    padding-left: 56px;
+  }
 }

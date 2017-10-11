@@ -5,6 +5,10 @@
 .page-header__logo-wrapper {
   min-height: 56px;
   position: relative;
+
+  @media @tablet-widths {
+    min-height: auto;
+  }
 }
 
 .page-header__picture-wrapper {
@@ -13,6 +17,12 @@
   height: 388px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: top;
+
+  @media @tablet-widths {
+    width: 768px;
+    height: 518px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+  }
 
   &::after {
     content: "";
@@ -23,22 +33,21 @@
     width: 320px;
     height: 57px;
     bottom: -30px;
+
+    @media @tablet-widths {
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      width: 768px;
+      height: 57px;
+      bottom: -1px;
+    }
   }
 
   &--inner {
     height: 159px;
     background-position: bottom;
-  }
-}
 
-@media @tablet-widths {
-  .page-header__logo-wrapper {
-    min-height: auto;
-  }
-
-  .page-header__picture-wrapper {
-    width: 768px;
-    height: 518px;
-    background-repeat: round;
+    @media @tablet-widths {
+      height: 290px;
+    }
   }
 }

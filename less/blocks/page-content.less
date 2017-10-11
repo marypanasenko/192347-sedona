@@ -4,6 +4,10 @@
 
 .page-content__header {
   padding: 40px 20px 0;
+
+  @media @tablet-widths {
+    padding: 50px 20px 0;
+  }
 }
 
 .page-content__title {
@@ -13,6 +17,12 @@
   font-size: @title-fs-mobile;
   line-height: @title-lh;
   text-transform: uppercase;
+
+  @media @tablet-widths {
+    width: auto;
+    margin: 0 100px;
+    font-size: @title-fs-desktop;
+  }
 }
 
 .page-content__text {
@@ -24,4 +34,9 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #333333;
+
+  @media @tablet-widths {
+    width: auto;
+    padding-top: 28px;
+  }
 }
