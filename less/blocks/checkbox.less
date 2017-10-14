@@ -3,10 +3,19 @@
   margin-bottom: 43px;
 
   @media @tablet-widths {
+    order: 1;
+  }
+
+  &:nth-child(2n) {
+    @media @tablet-widths {
+      order: 2;
+    }
+  }
+
+  @media @tablet-widths {
     width: 260px;
     padding: 0;
     margin-bottom: 50px;
-
   }
 }
 

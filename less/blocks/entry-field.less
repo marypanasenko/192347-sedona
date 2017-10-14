@@ -1,0 +1,45 @@
+.entry-field__wrapper {
+  position: relative;
+
+  &--phone {
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 1999;
+      right: -58px;
+      bottom: 0;
+
+      @media @tablet-widths {
+        right: -58px;
+      }
+    }
+  }
+
+  &--mail {
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 1999;
+      right: -58px;
+      bottom: 0;
+
+      @media @tablet-widths {
+        right: -58px;
+      }
+    }
+  }
+}
