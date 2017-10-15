@@ -8,6 +8,10 @@
     padding: 0 60px;
     box-sizing: border-box;
   }
+
+  @media @desktop-widths {
+    padding: 0;
+  }
 }
 .photos__header {
   margin: 0;
@@ -16,7 +20,12 @@
 
   @media @tablet-widths {
     padding-top: 74px;
-    margin: 0;
+    margin: 0 auto;
+  }
+
+  @media @desktop-widths {
+    margin: 0 auto;
+    padding-top: 110px;
   }
 }
 
@@ -34,5 +43,10 @@
   @media @tablet-widths {
     width: auto;
     padding: 31px 90px 17px;
+  }
+
+  @media @desktop-widths {
+    box-sizing: border-box;
+    padding: 31px 30px 17px;
   }
 }

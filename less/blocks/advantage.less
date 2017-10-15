@@ -9,6 +9,11 @@
     padding: 0;
   }
 
+  @media @tablet-widths {
+    width: 300px;
+    margin: 0 auto;
+  }
+
   &--house {
     @media @tablet-widths {
       order: 1;
@@ -30,6 +35,9 @@
         background-size: contain;
         top: 60px;
         left: 90px;
+      }
+      @media @desktop-widths {
+        left: 110px;
       }
     }
   }
@@ -56,6 +64,10 @@
         top: 58px;
         left: 96px;
       }
+
+      @media @desktop-widths {
+        left: 118px;
+      }
     }
   }
 
@@ -81,6 +93,10 @@
         background-position: center;
         top: 63px;
         left: 89px;
+      }
+
+      @media @desktop-widths {
+        left: 111px;
       }
     }
   }
@@ -110,5 +126,15 @@
   @media @tablet-widths {
     margin: 0;
     padding: 20px 45px 10px;
+  }
+
+  @media @desktop-widths {
+    padding: 20px 0 10px;
+  }
+
+  &--memento {
+    @media @desktop-widths {
+      padding: 20px;
+    }
   }
 }
