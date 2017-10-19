@@ -9,5 +9,21 @@
 
   @media @desktop-widths {
     width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
   }
 }
+
+.line() {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 1px;
+  background-color: @gray-light;
+
+  @media @desktop-widths {
+    width: 278px;
+  }
+}
+
+@retina: ~"(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

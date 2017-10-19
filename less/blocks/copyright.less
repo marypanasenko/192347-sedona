@@ -4,6 +4,15 @@
   align-items: center;
   width: 130px;
   margin: 40px auto 20px;
+
+  @media @tablet-widths {
+    margin: 0;
+  }
+
+  @media @desktop-widths {
+    width: 400px;
+    justify-content: flex-end;
+  }
 }
 
 .copyright__text {
@@ -16,6 +25,11 @@
   width: 27px;
   height: 34px;
   font-size: 0;
+
+  @media @desktop-widths {
+    margin-right: 44px;
+    margin-left: 12px;
+  }
 }
 
 .copyright__svg {
