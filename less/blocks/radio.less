@@ -41,7 +41,7 @@
 }
 
 .radio__input + .radio__label:active::before {
-    background-color: #d5d5d5;
+  background-color: #d5d5d5;
 }
 
 .radio__input:checked + .radio__label::after {
@@ -50,7 +50,7 @@
   position: absolute;
   cursor: pointer;
   top: 21px;
-  left: 12%;
+  left: 37px;
   width: 22px;
   height: 22px;
   background-color: #000000;
@@ -83,5 +83,9 @@
   @media @tablet-widths {
     padding-left: 56px;
     cursor: pointer;
+  }
+
+  @media @desktop-widths {
+    padding-left: 59px;
   }
 }

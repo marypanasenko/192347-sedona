@@ -1,20 +1,41 @@
 .modal {
   .container();
   display: block;
-  box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 3;
+}
 
-  &--failure {
-    @media @tablet-widths {
-      width: 400px;
-      padding: 50px 0;
-    }
+.modal__failure {
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  display: none;
+
+  &--showed {
+    display: block;
   }
 
-  &--success {
-    @media @tablet-widths {
-      width: 641px;
-      padding-top: 53px;
-    }
+  @media @tablet-widths {
+    width: 400px;
+    padding: 50px 0;
+  }
+}
+
+.modal__success {
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  display: none;
+
+  &--showed {
+    display: block;
+  }
+
+  @media @tablet-widths {
+    width: 641px;
+    padding-top: 53px;
   }
 }
 

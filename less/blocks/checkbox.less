@@ -26,7 +26,7 @@
   display: block;
   position: absolute;
   cursor: pointer;
-  top: 6px;
+  top: -4px;
   left: 19px;
   width: 55px;
   height: 55px;
@@ -38,7 +38,8 @@
   }
 
   @media @desktop-widths {
-    left: 0;
+    left: -1px;
+    top: 6px;
   }
 }
 
@@ -52,18 +53,20 @@
   position: absolute;
   cursor: pointer;
   top: 17px;
-  top: 23px;
+  left: 36px;
   width: 24px;
   height: 16px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 
   @media @tablet-widths {
+    top: 18px;
     left: 48px;
   }
 
   @media @desktop-widths {
     left: 17px;
+    top: 25px;
   }
 }
 

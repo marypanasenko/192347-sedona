@@ -1,5 +1,5 @@
 .photo {
-  padding: 21px 20px 16px;
+  padding: 21px 20px 17px;
   border-top: 1px solid @gray-light;
   border-bottom: 1px solid @gray-light;
 
@@ -24,7 +24,6 @@
     @media @desktop-widths {
       width: 1200px;
       margin-top: 55px;
-
     }
   }
 }
@@ -48,8 +47,8 @@
     position: absolute;
     content: "";
     width: 400px;
-    height: 0px;
-    bottom: 0px;
+    height: 0;
+    bottom: 0;
     right: 0;
     z-index: 1;
   }
@@ -97,7 +96,7 @@
 .photo__like {
   display: block;
   position: relative;
-  margin-top: 8px;
+  margin-top: 5px;
   font-size: @subtitle-fs;
   line-height: 24px;
   font-weight: 700;
@@ -111,6 +110,12 @@
 
   @media @desktop-widths {
     color: #ffffff;
+  }
+
+  &--short {
+    @media @tablet-widths {
+      padding-right: 32px;
+    }
   }
 }
 
@@ -133,6 +138,7 @@
   @media @desktop-widths {
     width: 400px;
   }
+
   &--full {
     @media @tablet-widths {
       width: 648px;
