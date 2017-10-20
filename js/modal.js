@@ -17,12 +17,12 @@ form.addEventListener('submit', function(e) {
   modalSuccess.classList.add('modal__success--showed');
 });
 
-closeOk.addEventListener("click", function(event) {
+closeOk.addEventListener('click', function(e) {
   event.preventDefault();
-  modalFailure.classList.remove("modal__failure--showed");
+  modalFailure.classList.remove('modal__failure--showed');
 });
 
-closeSuccess.addEventListener("click", function(event) {
+closeSuccess.addEventListener('click', function(e) {
   event.preventDefault();
-  modalSuccess.classList.remove("modal__success--showed");
+  modalSuccess.classList.remove('modal__success--showed');
 });
