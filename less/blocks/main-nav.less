@@ -135,16 +135,26 @@
     background-image: url("../img/icon-cross.svg");
   }
 
-  &--closed {
-    width: 25px;
-    height: 2px;
-    top: 17px;
-    right: 19px;
-    background-color: @blue-base;
-    box-shadow: 0 8px 0 0 @blue-base, 0 16px 0 0 @blue-base;
-  }
-
   @media @tablet-widths {
     display: none;
+  }
+}
+
+.main-nav__toggler--closed {
+  width: 25px;
+  height: 23px;
+  top: 17px;
+  right: 19px;
+  background: transparent;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 4px;
+    background-color: @blue-base;
+    box-shadow: 0 8px 0 0 @blue-base, 0 16px 0 0 @blue-base;
   }
 }

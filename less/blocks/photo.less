@@ -34,26 +34,30 @@
 
 .photo__description {
   height: 100%;
-  overflow: scroll;
 
   @media @tablet-widths {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 60px;
+    overflow: auto;
     background-color: @gray-light;
   }
 
   @media @desktop-widths {
+    max-height: 50%;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
     content: "";
     width: 400px;
-    height: 0;
     bottom: 0;
     right: 0;
     z-index: 1;
+    overflow: scroll;
   }
 
   &--full {

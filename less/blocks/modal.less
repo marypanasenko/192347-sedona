@@ -5,37 +5,29 @@
   position: fixed;
   background-color: #ffffff;
   z-index: 3;
-}
 
-.modal__failure {
-  bottom: 20%;
-  left: 0;
-  right: 0;
-  display: none;
+  &--small {
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    display: none;
 
-  &--showed {
-    display: block;
+    @media @tablet-widths {
+      width: 400px;
+      padding: 50px 0;
+    }
   }
 
-  @media @tablet-widths {
-    width: 400px;
-    padding: 50px 0;
-  }
-}
+  &--big {
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    display: none;
 
-.modal__success {
-  bottom: 25%;
-  left: 0;
-  right: 0;
-  display: none;
-
-  &--showed {
-    display: block;
-  }
-
-  @media @tablet-widths {
-    width: 641px;
-    padding-top: 53px;
+    @media @tablet-widths {
+      width: 641px;
+      padding-top: 53px;
+    }
   }
 }
 
