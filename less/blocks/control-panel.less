@@ -1,10 +1,11 @@
 .control-panel {
+  display: flex;
+  position: relative;
+  align-items: center;
   width: 280px;
   height: 66px;
   margin: 0 auto;
   background-color: #f2f2f2;
-  position: relative;
-  display: flex;
 
   @media @tablet-widths {
     width: 648px;
@@ -25,11 +26,12 @@
   position: absolute;
   content: "";
   width: 280px;
-  height: 45px;
+  height: 15px;
+  padding: 15px 0 30px;
   top: -45px;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
-  cursor: pointer;
+  box-sizing: border-box;
 
   @media @tablet-widths {
     position: relative;
@@ -39,41 +41,44 @@
     top: 0;
     background: none;
   }
+}
 
-  &::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 22px;
-    background-color: rgba(255, 255, 255, 0.3);
-    left: 22px;
-    height: 4px;
+.control-panel__line {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 47%;
+  right: 22px;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 22px;
+  height: 4px;
+  cursor: pointer;
 
-    @media @tablet-widths {
-      top: 48%;
-      right: 0;
-      left: 0;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 45%;
-    display: block;
-    left: 58px;
-    width: 9px;
-    height: 10px;
-    background-color: #ffffff;
-    border-radius: 50%;
-
-    @media @tablet-widths {
-      top: 45%;
-      left: 113px;
-    }
+  @media @tablet-widths {
+    top: 48%;
+    right: 0;
+    left: 0;
   }
 }
+
+.control-panel__point {
+  content: "";
+  position: absolute;
+  top: 39%;
+  display: block;
+  left: 58px;
+  width: 9px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media @tablet-widths {
+    top: 45%;
+    left: 113px;
+  }
+}
+
 
 .control-panel__svg {
   fill: #5c6870;
@@ -103,27 +108,27 @@
   }
 
   &--replay {
-    padding: 0 30px 0 25px;
+    margin: 0 30px 0 19px;
 
     @media @tablet-widths {
-      padding: 0 42px 0 35px;
+      margin: 0 36px 0 29px;
     }
   }
 
   &--subtitles {
+    margin: 0;
     margin-left: auto;
-    padding: 0 8px;
 
     @media @tablet-widths {
-      padding: 0 0 0 43px;
+      margin-left: 19px;
     }
   }
 
   &--fullscreen {
-    padding: 0 23px;
+    margin: 0 18px;
 
     @media @tablet-widths {
-      padding: 0 41px 0 31px;
+      margin: 0 36px 0 19px;
     }
   }
 }

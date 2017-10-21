@@ -57,9 +57,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 320px;
+    width: 326px;
     height: 57px;
     bottom: -30px;
+    left: -1px;
     z-index: 2;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: round;
@@ -68,6 +69,7 @@
       width: 768px;
       height: 57px;
       bottom: -1px;
+      left: 0;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
 
@@ -110,6 +112,31 @@
         background-repeat: no-repeat;
         background-position: 21% 100%;
       }
+    }
+  }
+}
+
+.page-header__img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 90px;
+
+  @media @tablet-widths {
+    padding-top: 77px;
+    width: 460px;
+    height: 350px;
+  }
+
+  &--inner {
+    padding-top: 50px;
+
+    @media @tablet-widths {
+      padding-top: 0;
+      height: 269px;
+    }
+
+    @media @desktop-widths {
+      height: 283px;
     }
   }
 }
