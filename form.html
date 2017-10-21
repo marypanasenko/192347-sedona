@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
@@ -41,7 +41,7 @@
           </a>
         </div>
         <div class="page-header__picture-wrapper page-header__picture-wrapper--inner">
-            <img class="header-picture__img header-picture__img--inner" src="img/text-sedona.svg" alt="Welcome Sedona" width="229" height="39">
+            <img class="page-header__img page-header__img--inner" src="img/text-sedona.svg" alt="Welcome Sedona" width="229" height="39">
         </div>
       </header>
       <main class="page-content">
@@ -72,7 +72,7 @@
               <h2 class="form__legend form__legend--contact">Контактная информация:</h2>
               <div class="form__input-wrapper form__input-wrapper--contact">
                 <div class="form__input-block form__input-block--contact">
-                  <label class="form__label form__label--contact form__label--phone" for="tel"><span class="form__label--invisible">Контактный </span>телефон*:</label>
+                  <label class="form__label form__label--contact form__label--phone" for="tel"><span class="form__label-span form__label-span--invisible">Контактный </span>телефон*:</label>
                   <div class="entry-field entry-field__wrapper entry-field__wrapper--phone">
                     <input class="form__entry-field form__entry-field--contact" type="tel" name="tel" id="tel" placeholder="Введите телефон" required="">
                   </div>
@@ -125,7 +125,7 @@
             </div>
             <div class="form__wrapper form__wrapper--textarea">
               <label class="form__legend form__legend--textarea" for="message">Опишите свои эмоции:</label>
-              <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги" name="message"></textarea>
+              <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги" name="message" id="message"></textarea>
             </div>
             <div class="form__wrapper form__wrapper--button">
               <input class="form__button button" type="submit" value="Отправить отзыв">
@@ -156,7 +156,7 @@
         <div class="page-footer__block copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">html academy
-            <svg class="copyright__svg" width="26.943px" height="34.09px">
+            <svg class="copyright__svg" width="40px" height="45px">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
@@ -175,7 +175,6 @@
         <button class="modal__button modal__button--success button" type="button" name="button">Закрыть окно</button>
       </div>
     </div>
-    <script src="js/modal.js"></script>
     <script src="js/main-nav.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody(); // run it now or whenever you are ready</script>

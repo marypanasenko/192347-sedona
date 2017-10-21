@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
@@ -41,7 +41,7 @@
           </a>
         </div>
         <div class="page-header__picture-wrapper page-header__picture-wrapper--inner">
-          <img class="header-picture__img header-picture__img--inner" src="img/text-sedona.svg" alt="Welcome Sedona" width="229" height="39">
+          <img class="page-header__img page-header__img--inner" src="img/text-sedona.svg" alt="Welcome Sedona" width="229" height="39">
         </div>
       </header>
       <main class="page-content">
@@ -53,12 +53,12 @@
           <article class="photo photo--full">
             <a class="photo__link" href="index.html">
               <picture class="photo__picture">
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@1x.webp 1x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@1x.webp 1x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                <img class="photo__img photo__img--full" srcset="img/photo-sunset-mobile@1x.jpg 1x, img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы" width="280" height="280">
+                <img class="photo__img photo__img--full" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы" width="280" height="280">
               </picture>
             </a>
             <div class="photo__description photo__description--full">
@@ -77,12 +77,12 @@
           <article class="photo">
             <a class="photo__link" href="#">
               <picture class="photo__picture">
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@1x.webp 1x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@1x.webp 1x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                <img class="photo__img" srcset="img/photo-cactus-mobile@1x.jpg 1x, img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность" width="280" height="280">
+                <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность" width="280" height="280">
               </picture>
             </a>
             <div class="photo__description">
@@ -101,12 +101,12 @@
           <article class="photo">
             <a class="photo__link" href="#">
               <picture class="photo__picture">
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@1x.webp 1x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@1x.webp 1x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                <img class="photo__img" srcset="img/photo-roads-mobile@1x.jpg 1x, img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+                <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
               </picture>
             </a>
             <div class="photo__description">
@@ -125,12 +125,12 @@
           <article class="photo">
             <a class="photo__link" href="#">
               <picture class="photo__picture">
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@1x.webp 1x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@1x.webp 1x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="photo__img" srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" width="280" height="280">
+                <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" width="280" height="280">
               </picture>
             </a>
             <div class="photo__description">
@@ -154,12 +154,12 @@
           </header>
           <div class="video__wrapper">
             <picture class="video__picture">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@1x.webp 1x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width:1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img class="video__img" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x" alt="Мост дьявола" width="320" height="201">
+              <img class="video__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Мост дьявола" width="320" height="201">
             </picture>
             <div class="control-panel">
               <button class="control-panel__button control-panel__button--replay" type="button">
@@ -207,7 +207,7 @@
         <div class="page-footer__block copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">html academy
-            <svg class="copyright__svg" width="26.943px" height="34.09px">
+            <svg class="copyright__svg" width="40px" height="45px">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>

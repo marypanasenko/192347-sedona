@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 130px;
-  margin: 40px auto 20px;
+  width: 151px;
+  margin: 34px auto 20px;
+  box-sizing: border-box;
 
   @media @tablet-widths {
     margin: 0;
@@ -18,16 +19,25 @@
 .copyright__text {
   font-size: @subtitle-fs;
   line-height: 26px;
+  margin-left: 8px;
   text-transform: uppercase;
+
+  @media @tablet-widths {
+    margin-left: 12px;
+  }
+
+  @media @desktop-widths {
+    margin-left: 0;
+  }
 }
 
 .copyright__logo {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 45px;
   font-size: 0;
 
   @media @desktop-widths {
-    margin-right: 44px;
+    margin-right: 37px;
     margin-left: 12px;
   }
 }
